@@ -1,0 +1,79 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: finish work
+  steps:
+  - intent: finish work
+  - action: utter_finish work
+
+- story: I love you
+  steps: 
+  - intent: I love you
+  - action: utter_I love you
+
+- story: loneliness
+  steps: 
+  - intent: loneliness
+  - action: utter_loneliness
+
+- story: lord muruga
+  steps: 
+  - intent: lord muruga
+  - action: utter_lord muruga
+
+- story: weatherr
+  steps:
+   - intent: weather
+   - action: utter_weather
+
+- story: weatherrrr
+  steps:
+   - intent: cty
+   - action: action_hello_world
+   
+
+- story: thank you
+  steps:
+   - intent: Thank you
+   - action: utter_Thank you
+
+
+
+- story: Machine learning
+  steps:
+   - intent: Machine learning
+   - action: utter_Machine learning
+
+  
+
+
+
+

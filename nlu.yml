@@ -1,0 +1,433 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: finish work
+  examples: |
+    - have you finished your daily work?
+    - do you have any pending works
+    - how much time do you take to complete your work
+
+- intent: I love you
+  examples: |
+    - pyar kartha tha
+    - pyar prema kadhal
+    - I adore you
+    - you filled my heart
+
+- intent: loneliness
+  examples: |
+    - show some related pictures of loneliness
+    - loneliness feels some times better
+    - loneliness will not be a solution for the problems.
+
+- intent: lord muruga
+  examples: |
+    - show some related pictures of lord muruga
+    - lord muruga is the ancient god
+    - lord muruga is the son of lord shiva
+
+- intent: Machine learning
+  examples: |
+    - ml
+    - Can you show the examples of machine learning
+    - Whether the machine learning has various algorithmns?if it so...show it
+    - can you explain the example of machine learning algorithmns with suitable dataset
+
+- intent: cty
+  examples: |
+    - Mumbai		
+    - Delhi	
+    - Bangalore	
+    - Hyderabad	
+    - Ahmedabad	
+    - Chennai	
+    - Kolkata	
+    - Surat	
+    - Pune	
+    - Jaipur	
+    - Lucknow	
+    - Kanpur	
+    - Nagpur	
+    - Indore	
+    - Thane	
+    - Bhopal	
+    - Visakhapatnam	
+    - Pimpri-Chinchwad	
+    - Patna	
+    - Vadodara	
+    - Ghaziabad	
+    - Ludhiana	
+    - Agra	
+    - Nashik	
+    - Faridabad	
+    - Meerut	
+    - Rajkot		
+    - Kalyan-Dombivali	
+    - Vasai-Virar	
+    - Varanasi	
+    - Srinagar	
+    - Aurangabad	
+    - Dhanbad	
+    - Amritsar	
+    - Navi Mumbai	
+    - Allahabad	
+    - Howrah	
+    - Ranchi	
+    - Jabalpur
+    - Gwalior	
+    - Coimbatore
+    - Vijayawada	
+    - Jodhpur	
+    - Madurai	
+    - Raipur	
+    - Kota	
+    - Guwahati	
+    - Chandigarh	
+    - Thiruvananthapuram	
+    - Solapur	
+    - Hubballi-Dharwad	
+    - Tiruchirappalli
+    - Tiruppur	
+    - Moradabad	
+    - Mysore	
+    - Bareily	
+    - Gurgaon	
+    - Aligarh	
+    - Jalandhar	
+    - Bhubaneswar	
+    - Salem	
+    - Mira-Bhayandar	
+    - Warangal
+    - Guntur
+    - Bhiwandi	
+    - Saharanpur	
+    - Gorakhpur	
+    - Bikaner	
+    - Amravati	
+    - Noida	
+    - Jamshedpur
+    - Bhilai	
+    - Cuttack	
+    - Firozabad	
+    - Kochi	
+    - Nellore
+    - Bhavnagar	
+    - Dehradun	
+    - Durgapur	
+    - Asansol	
+    - Rourkela
+    - Nanded	
+    - Kolhapur	
+    - Ajmer
+    - Akola	
+    - Gulbarga
+    - Jamnagar	
+    - Ujjain	
+    - Loni	
+    - Siliguri	
+    - Jhansi	
+    - Ulhasnagar	
+    - Jammu	
+    - Sangli-Miraj & Kupwad	
+    - Mangalore	
+    - Erode
+    - Belgaum	
+    - Ambattur	
+    - Tirunelveli	
+    - Malegaon	
+    - Gaya	
+    - Jalgaon	
+    - Udaipur	
+    - Maheshtala	
+    - Davanagere	
+    - Kozhikode	
+    - Kurnool	
+    - Rajpur Sonarpur	
+    - Rajahmundry
+    - Bokaro	
+    - South Dumdum	
+    - Bellary	
+    - Patiala	
+    - Gopalpur	
+    - Agartala	
+    - Bhagalpur	
+    - Muzaffarnagar	
+    - Bhatpara
+    - Panihati	
+    - Latur	
+    - Dhule	
+    - Tirupati
+    - Rohtak
+    - Korba	
+    - Bhilwara	
+    - Berhampur	
+    - Muzaffarpur	
+    - Ahmednagar	
+    - Mathura	
+    - Kollam
+    - Avadi	
+    - Kadapa	
+    - Kamarhati	
+    - Sambalpur	
+    - Bilaspur	
+    - Shahjahanpur	
+    - Satara	
+    - Bijapur	
+    - Rampur	
+    - Shivamogga	
+    - Chandrapur	
+    - Junagadh	
+    - Thrissur	
+    - Alwar
+    - Bardhaman	
+    - Kulti	
+    - Kakinada	
+    - Nizamabad	
+    - Parbhani	
+    - Tumkur	
+    - Khammam	
+    - Ozhukarai	
+    - Bihar Sharif	
+    - Panipat	
+    - Darbhanga	
+    - Bally	
+    - Aizawl	
+    - Dewas	
+    - Ichalkaranji
+    - Karnal	
+    - Bathinda	
+    - Jalna	
+    - Eluru	
+    - Kirari Suleman Nagar
+    - Barasat	
+    - Purnia	
+    - Satna
+    - Mau	
+    - Sonipat	
+    - Farrukhabad	
+    - Sagar	
+    - Rourkela	
+    - Durg	
+    - Imphal
+    - Ratlam	
+    - Hapur	
+    - Arrah	
+    - Karimnagar
+    - Anantapur	
+    - Etawah	
+    - Ambernath	
+    - North Dumdum	
+    - Bharatpur	
+    - Begusarai	
+    - New Delhi	
+    - Gandhidham	
+    - Baranagar	
+    - Tiruvottiyur	
+    - Puducherry
+    - Sikar
+    - Thoothukudi	
+    - Rewa	
+    - Mirzapur	
+    - Raichur	
+    - Pali	
+    - Ramagundam	
+    - Haridwar	
+    - Vijayanagaram	
+    - Katihar	
+    - Nagarcoil
+    - Sri Ganganagar
+    - Karawal Nagar
+    - Mango	
+    - Thanjavur	
+    - Bulandshahr
+    - Uluberia
+    - Murwara	
+    - Sambhal	
+    - Singrauli
+    - Nadiad	
+    - Secunderabad
+    - Naihati	
+    - Yamunanagar
+    - Bidhan Nagar	
+    - Pallavaram
+    - Bidar	
+    - Munger
+    - Panchkula	
+    - Burhanpur	
+    - Raurkela Industrial Township	
+    - Kharagpur	
+    - Dindigul
+    - Gandhinagar
+    - Hospet	
+    - Nangloi Jat	
+    - English Bazar	
+    - Ongole	
+    - Deoghar	
+    - Chapra	
+    - Haldia	
+    - Khandwa	
+    - Nandyal
+    - Chittoor
+    - Morena
+    - Amroha
+    - Anand
+    - Bhind
+    - Bhalswa Jahangir Pur
+    - Madhyamgram
+    - Bhiwani
+    - Navi Mumbai Panvel Raigad
+    - Baharampur	
+    - Ambala	
+    - Morvi	
+    - Fatehpur
+    - Rae Bareli
+    - Khora
+    - Bhusawal
+    - Orai
+    - Bahraich
+    - Vellore
+    - Mahesana
+    - Sambalpur
+    - Sirsa
+    - Danapur
+    - Serampore
+    - Sultan Pur Majra
+    - Guna
+    - Jaunpur
+    - Panvel
+    - Shivpuri
+    - Surendranagar Dudhrej
+    - Unnao
+    - Hugli and Chinsurah
+    - Alappuzha
+    - Kottayam
+    - Machilipatnam
+    - Shimla
+    - Adoni
+    - Tenali
+    - Proddatur
+    - Saharsa
+    - Hindupur
+    - Sasaram
+    - Hajipur
+    - Bhimavaram	
+    - Dehri
+    - Madanapalle
+    - Siwan
+    - Bettiah
+    - Guntakal
+    - Srikakulam
+    - Motihari
+    - Dharmavaram
+    - Gudivada
+    - Narasaraopet
+    - Bagaha
+    - Miryalaguda
+    - Kishanganj
+    - Karaikudi
+    - Suryapet
+    - Jamalpur
+    - Kavali
+    - Tadepalligudem
+    - Amaravati
+    - Buxar
+    - Jehanabad
+    -  Aurangabad
+
+- intent: weather
+  examples: |
+    - check the weather 
+- intent: Thank you 
+  examples: |
+    - I feel grateful
+    - I am admirable
+    - I am so glad of you
+    - thanyavaath karthae hing!!
+

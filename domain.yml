@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - finish work
+  - I love you
+  - loneliness
+  - lord muruga
+  - Machine learning
+  - weather
+  - Thank you
+  - cty
+  - ask_temperature
+
+
+actions:
+  - action_hello_world
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_finish work:
+  - text: "Yes I finished my work soon,because i am a bot"
+
+  utter_I love you:
+  - text: "I am sorry,I can't because i am a bot"
+
+  utter_loneliness:
+  - image: "https://images.pexels.com/photos/2865901/pexels-photo-2865901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    text: 'loneliness will be a soulroom to grow yourself'
+
+  utter_lord muruga:
+  - image: "https://e0.pxfuel.com/wallpapers/590/384/desktop-wallpaper-lord-murugan-animated-ideas-lord-murugan-lord-murugan-lord-shiva-family-baby-lord-murugan.jpg"
+    text: ''
+  
+  utter_Thank you:
+  - text: "NO mention its my pleasure"
+
+  utter_weather:
+  - text: "city plz"
+
+
+  utter_Machine learning:
+  - text: "https://alex.smola.org/drafts/thebook.pdf"
+    
+
+ 
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+ 
